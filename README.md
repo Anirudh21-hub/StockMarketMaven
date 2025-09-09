@@ -1,4 +1,4 @@
-STOCK MARKET MAVEN
+# Stock Market Maven
 
 This project is a Streamlit-based web application for visualizing historical stock prices and comparing model-predicted closing prices against actuals. The core of the app is an already trained LSTM model stored in `Stock_prediction_model.h5`, which is loaded at runtime to generate predictions. The UI is built with Streamlit (`import streamlit as slt`) and provides a single text input for the user to enter a stock ticker (default: AAPL). Once a ticker is provided, the app uses `yfinance` to download daily historical data between 2010-01-01 and 2022-12-31.
 
