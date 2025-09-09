@@ -1,3 +1,5 @@
+STOCK MARKET MAVEN
+
 This project is a Streamlit-based web application for visualizing historical stock prices and comparing model-predicted closing prices against actuals. The core of the app is an already trained LSTM model stored in `Stock_prediction_model.h5`, which is loaded at runtime to generate predictions. The UI is built with Streamlit (`import streamlit as slt`) and provides a single text input for the user to enter a stock ticker (default: AAPL). Once a ticker is provided, the app uses `yfinance` to download daily historical data between 2010-01-01 and 2022-12-31.
 
 After data retrieval, the app displays a descriptive summary (`df.describe()`) and renders multiple charts using Matplotlib: a simple “Closing Price vs Time” chart, a 100-day moving average overlay, and a combined 100-day and 200-day moving average overlay. These plots help users quickly understand long-term trends and momentum. The smoothing via rolling averages illustrates typical behavior around trend-following techniques, providing context before model predictions.
