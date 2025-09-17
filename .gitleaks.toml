@@ -1,0 +1,7 @@
+
+[allowlist]
+paths = [
+  "**/test_app.py",
+  ".github/workflows/main.yaml"
+]
+
